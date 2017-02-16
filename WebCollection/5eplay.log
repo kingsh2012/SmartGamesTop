@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "./collection_5eplay.py", line 100, in <module>
+    collect.main()
+  File "./collection_5eplay.py", line 73, in main
+    RawDataList = self.PageRawDataList() #网页采集出的原始数据
+  File "./collection_5eplay.py", line 27, in PageRawDataList
+    RawData = self.GetHtmlParser(PageUrl)
+  File "./collection_5eplay.py", line 18, in GetHtmlParser
+    dict_data = json.loads(soup.text) #json 转换 python dict
+  File "/usr/local/python27/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/python27/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/python27/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Traceback (most recent call last):
+  File "./collection_5eplay.py", line 5, in <module>
+    from init_mysql import *
+  File "/opt/deploy/web_weixin/wwwroot/collection/init_mysql.py", line 91
+    def Delete
+             ^
+SyntaxError: invalid syntax
